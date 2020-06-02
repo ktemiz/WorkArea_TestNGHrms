@@ -3,7 +3,7 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name="com.hrms.testbase.ListenerDemo"></listener>
+		<listener class-name="com.hrms.testbase.Listener"></listener>
 	</listeners>
 
 	<test name="Smoke Test">

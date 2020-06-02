@@ -10,38 +10,43 @@ public class LoginTest extends CommonMethods {
 
 	@Test (groups = "smoke")
 	public void validAdminLogin() {
-		// LoginPageElements login = new LoginPageElements();
+	//In login page, enter valid username and psw
+		test.info("Entering valid admin credentilas");
 		sendText(login.username, ConfigsReader.getProperty("username"));
 		sendText(login.password, ConfigsReader.getProperty("password"));
 		click(login.loginBtn);
 
-		// DashboardPageElements dashboard = new DashboardPageElements();
+		//check "welcome Admin" text to confirm login succesfully
 		String expectedUser = "Welcome Admin";
 		String actualUser = dashboard.welcome.getText();
 		Assert.assertEquals(actualUser, expectedUser, "Admin is NOT Logged in");
 		Assert.assertTrue(actualUser.contains(ConfigsReader.getProperty("username")));
+		test.info("Login is successful and get welcome admin");
 	}
 
 	@Test (groups = "regression")
 	public void invalidPasswordLogin() {
-		// LoginPageElements login = new LoginPageElements();
+		//use invalid psw and confirm that login is not succesfull
 		sendText(login.username, ConfigsReader.getProperty("username"));
 		sendText(login.password, "uiuguig");
 		click(login.loginBtn);
 
 		String expected = "Invalid credentials";
 		Assert.assertEquals(login.errorMsg.getText(), expected, "Error message text is not matched");
+		test.info("Login is not succesfull and Error message is created");
 	}
 
 	@Test(groups = "regression")
 	public void emptyUsernameLogin() {
-		// LoginPageElements login = new LoginPageElements();
+		
+		//leave empty username text box and check error message
 		sendText(login.password, ConfigsReader.getProperty("password"));
 		click(login.loginBtn);
 
 		String expected = "Username cannot be empty";
 
 		Assert.assertEquals(login.errorMsg.getText(), expected, "Error message text is not matched");
+		test.info("Login is not succesfull and error message is created");
 	}
 
 }

@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>smoke.xml</span>
+                    <span>regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hrms.testcases.HRMAddEmployee_DataProvide" hash-for-method="addEmployeeDataProviding">addEmployeeDataProviding</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hrms.testcases.LoginTest" hash-for-method="validAdminLogin">validAdminLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hrms.testcases.AddEmployeeTest" hash-for-method="addEmployeeDataProviding(Kobe_3, Byrant_3, KobeBraynt_3, Hum@nhrm123)">addEmployeeDataProviding(Kobe_3, Byrant_3, KobeBraynt_3, Hum@nhrm123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hrms.testcases.AddEmployeeTest" hash-for-method="addEmployeeDataProviding(Kobe_1, Byrant_1, KobeBraynt_1, Hum@nhrm123)">addEmployeeDataProviding(Kobe_1, Byrant_1, KobeBraynt_1, Hum@nhrm123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hrms.testcases.AddEmployeeTest" hash-for-method="addEmployeeDataProviding(Kobe_2, Byrant_2, KobeBraynt_2, Hum@nhrm123)">addEmployeeDataProviding(Kobe_2, Byrant_2, KobeBraynt_2, Hum@nhrm123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hrms.testcases.LoginTest" hash-for-method="emptyUsernameLogin">emptyUsernameLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hrms.testcases.LoginTest" hash-for-method="invalidPasswordLogin">invalidPasswordLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -131,30 +137,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.hrms.testcases.HRMAddEmployee_DataProvide</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.hrms.testcases.AddEmployeeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addEmployeeDataProviding">
-                  </a> <!-- addEmployeeDataProviding -->
+                  <a name="addEmployeeDataProviding(Kobe_3, Byrant_3, KobeBraynt_3, Hum@nhrm123)">
+                  </a> <!-- addEmployeeDataProviding(Kobe_3, Byrant_3, KobeBraynt_3, Hum@nhrm123) -->
                   <span class="method-name">addEmployeeDataProviding</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: java.lang.NullPointerException
-	at com.hrms.utils.ExcelUtility.loadSheet(ExcelUtility.java:25)
-	at com.hrms.utils.ExcelUtility.excelIntoArray(ExcelUtility.java:42)
-	at com.hrms.testcases.HRMAddEmployee_DataProvide.ghetData2(HRMAddEmployee_DataProvide.java:55)
-	... 25 more
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Kobe_3, Byrant_3, KobeBraynt_3, Hum@nhrm123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeDataProviding(Kobe_1, Byrant_1, KobeBraynt_1, Hum@nhrm123)">
+                  </a> <!-- addEmployeeDataProviding(Kobe_1, Byrant_1, KobeBraynt_1, Hum@nhrm123) -->
+                  <span class="method-name">addEmployeeDataProviding</span>
+                  <span class="parameters">(Kobe_1, Byrant_1, KobeBraynt_1, Hum@nhrm123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeDataProviding(Kobe_2, Byrant_2, KobeBraynt_2, Hum@nhrm123)">
+                  </a> <!-- addEmployeeDataProviding(Kobe_2, Byrant_2, KobeBraynt_2, Hum@nhrm123) -->
+                  <span class="method-name">addEmployeeDataProviding</span>
+                  <span class="parameters">(Kobe_2, Byrant_2, KobeBraynt_2, Hum@nhrm123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -163,9 +177,16 @@ Caused by: java.lang.NullPointerException
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validAdminLogin">
-                  </a> <!-- validAdminLogin -->
-                  <span class="method-name">validAdminLogin</span>
+                  <a name="emptyUsernameLogin">
+                  </a> <!-- emptyUsernameLogin -->
+                  <span class="method-name">emptyUsernameLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPasswordLogin">
+                  </a> <!-- invalidPasswordLogin -->
+                  <span class="method-name">invalidPasswordLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,7 +194,7 @@ Caused by: java.lang.NullPointerException
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/tmzz/eclipse-workspace/WorkArea_HrmsFramework/smoke.xml</span>
+            <span class="header-content">/Users/tmzz/eclipse-workspace/WorkArea_TestNGHrms/regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,22 +202,22 @@ Caused by: java.lang.NullPointerException
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.hrms.testbase.ListenerDemo&quot;/&gt;
+    &lt;listener class-name=&quot;com.hrms.testbase.Listener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Smoke Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;packages&gt;
       &lt;package name=&quot;com.hrms.testcases&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.hrms.testcases.HRMAddEmployee_DataProvide&quot;/&gt;
       &lt;class name=&quot;com.hrms.testcases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.hrms.testcases.AddEmployeeTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Smoke Test --&gt;
+  &lt;/test&gt; &lt;!-- Regression Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,7 +229,7 @@ Caused by: java.lang.NullPointerException
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Smoke Test (2 classes)</span>
+                <span class="test-name">Regression Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,6 +240,14 @@ Caused by: java.lang.NullPointerException
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">addEmp</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addEmployeeDataProviding</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">homework</span>
               <br/>
               <div class="method-in-group">
@@ -227,14 +256,18 @@ Caused by: java.lang.NullPointerException
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">smoke</span>
+              <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">addEmployeeDataProviding</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">validAdminLogin</span>
+                <span class="method-in-group-name">emptyUsernameLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidPasswordLogin</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -254,20 +287,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validAdminLogin')
-data.setCell(0, 2, 'com.hrms.testcases.LoginTest')
-data.setCell(0, 3, 2524);
+data.setCell(0, 1, 'addEmployeeDataProviding')
+data.setCell(0, 2, 'com.hrms.testcases.AddEmployeeTest')
+data.setCell(0, 3, 17419);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addEmployeeDataProviding')
-data.setCell(1, 2, 'com.hrms.testcases.HRMAddEmployee_DataProvide')
-data.setCell(1, 3, 0);
+data.setCell(1, 2, 'com.hrms.testcases.AddEmployeeTest')
+data.setCell(1, 3, 16862);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addEmployeeDataProviding')
+data.setCell(2, 2, 'com.hrms.testcases.AddEmployeeTest')
+data.setCell(2, 3, 16240);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidPasswordLogin')
+data.setCell(3, 2, 'com.hrms.testcases.LoginTest')
+data.setCell(3, 3, 1218);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'emptyUsernameLogin')
+data.setCell(4, 2, 'com.hrms.testcases.LoginTest')
+data.setCell(4, 3, 423);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 52 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -282,15 +327,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrms.testcases.AddEmployeeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">writeReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.hrms.testcases.LoginTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">invalidPasswordLogin</span>
-                <br/>
-                <span class="ignored-method-name">emptyUsernameLogin</span>
+                <span class="ignored-method-name">validAdminLogin</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -303,18 +355,80 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrms.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">generateReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">149 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validAdminLogin</span>
-                <span class="method-start">3951 ms</span>
+                <span class="method-name">emptyUsernameLogin</span>
+                <span class="method-start">4308 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6478 ms</span>
+                <span class="method-start">5319 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5499 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidPasswordLogin</span>
+                <span class="method-start">8187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9987 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrms.testcases.AddEmployeeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10186 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeDataProviding(Kobe_1, Byrant_1, KobeBraynt_1, Hum@nhrm123)</span>
+                <span class="method-start">13985 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32123 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeDataProviding(Kobe_2, Byrant_2, KobeBraynt_2, Hum@nhrm123)</span>
+                <span class="method-start">35328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">52255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeDataProviding(Kobe_3, Byrant_3, KobeBraynt_3, Hum@nhrm123)</span>
+                <span class="method-start">55577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">72990 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrms.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">writeReport</span>
+                <span class="method-start">73151 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

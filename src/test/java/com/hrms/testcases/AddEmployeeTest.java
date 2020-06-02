@@ -9,9 +9,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.hrms.utils.CommonMethods;
+import com.hrms.utils.Constants;
 import com.hrms.utils.ExcelUtility;
 
-public class HRMAddEmployee_DataProvide extends CommonMethods {
+public class AddEmployeeTest extends CommonMethods {
 	
 	/* HRMS Add Employee:
 		1. Open chrome browser
@@ -26,17 +27,20 @@ public class HRMAddEmployee_DataProvide extends CommonMethods {
 	 * 
 	 */
 
-	@Test (dataProvider = "userDataFromExcel", groups = { "homework", "addEmp", "regression" })
+	@Test (dataProvider = "userData", groups = { "homework", "addEmp", "regression" })
 	public void addEmployeeDataProviding(String firstname, String lastname, String newUsername, String newPassword) {
 		addEmp.navigateToAddEmployeePage();
-		
+		test.info("navigate to employee add page");
 		addEmp.addEmployeeInfo(firstname, lastname);
+		test.info("Adding new employee information");
 		addEmp.addEmployeeCredentials(newUsername, newPassword);
+		test.info("Adding new employee credential information");
 
 		AssertJUnit.assertTrue(detail.textProfilePic.isDisplayed());
 		System.out.println("New Employee added susccesfully");
+		test.info("Employee added succesfully");
 		
-		takeScreenShot(firstname);
+		//takeScreenshot();
 	}
 	
 	@DataProvider (name ="userData")
@@ -52,7 +56,7 @@ public class HRMAddEmployee_DataProvide extends CommonMethods {
 	
 	@DataProvider (name = "userDataFromExcel")
 	public Object[][] ghetData2() {
-		return ExcelUtility.excelIntoArray(System.getProperty("user.dir")+"/testdata/testDataHRM.xlsx", "employee");
+		return ExcelUtility.excelIntoArray(Constants.TESTDATA_FILEPATH, "employee");
 	
 	}
 

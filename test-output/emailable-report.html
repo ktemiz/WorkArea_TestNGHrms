@@ -9,18 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Smoke Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">6,689</td><td>smoke</td><td></td></tr>
+<tr><td><a href="#t0">Regression Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">73,575</td><td>regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.hrms.testcases.HRMAddEmployee_DataProvide</td><td><a href="#m0">addEmployeeDataProviding</a></td><td rowspan="1">1590891781934</td><td rowspan="1">0</td></tr><tr><th colspan="4">Smoke Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.hrms.testcases.LoginTest</td><td><a href="#m1">validAdminLogin</a></td><td rowspan="1">1590891785935</td><td rowspan="1">2524</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.hrms.testcases.AddEmployeeTest</td><td><a href="#m0">addEmployeeDataProviding</a></td><td rowspan="3">1591061720907</td><td rowspan="3">16862</td></tr><tr class="passedeven"><td><a href="#m1">addEmployeeDataProviding</a></td></tr><tr class="passedeven"><td><a href="#m2">addEmployeeDataProviding</a></td></tr><tr class="passedodd"><td rowspan="2">com.hrms.testcases.LoginTest</td><td><a href="#m3">emptyUsernameLogin</a></td><td rowspan="1">1591061669638</td><td rowspan="1">423</td></tr><tr class="passedodd"><td><a href="#m4">invalidPasswordLogin</a></td><td rowspan="1">1591061673517</td><td rowspan="1">1218</td></tr></tbody>
 </table>
-<h2>Smoke Test</h2><h3 id="m0">com.hrms.testcases.HRMAddEmployee_DataProvide#addEmployeeDataProviding</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: java.lang.NullPointerException
-	at com.hrms.utils.ExcelUtility.loadSheet(ExcelUtility.java:25)
-	at com.hrms.utils.ExcelUtility.excelIntoArray(ExcelUtility.java:42)
-	at com.hrms.testcases.HRMAddEmployee_DataProvide.ghetData2(HRMAddEmployee_DataProvide.java:55)
-	... 25 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.hrms.testcases.LoginTest#validAdminLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression Test</h2><h3 id="m0">com.hrms.testcases.AddEmployeeTest#addEmployeeDataProviding</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Kobe_3</td><td>Byrant_3</td><td>KobeBraynt_3</td><td>Hum@nhrm123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.hrms.testcases.AddEmployeeTest#addEmployeeDataProviding</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Kobe_1</td><td>Byrant_1</td><td>KobeBraynt_1</td><td>Hum@nhrm123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.hrms.testcases.AddEmployeeTest#addEmployeeDataProviding</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Kobe_2</td><td>Byrant_2</td><td>KobeBraynt_2</td><td>Hum@nhrm123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.hrms.testcases.LoginTest#emptyUsernameLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.hrms.testcases.LoginTest#invalidPasswordLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
