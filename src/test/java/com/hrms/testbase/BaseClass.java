@@ -46,8 +46,6 @@ public class BaseClass {
 	@BeforeMethod(alwaysRun = true)
 	public static WebDriver setUp() {
 		
-		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
-		
 		switch(ConfigsReader.getProperty("browser").toLowerCase()) {
 		
 		case "chrome":

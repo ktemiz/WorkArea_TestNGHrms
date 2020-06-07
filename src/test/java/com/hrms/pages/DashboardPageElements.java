@@ -20,8 +20,8 @@ public class DashboardPageElements {
 	@FindBy(id = "welcome")
 	public WebElement welcome;
 	
-	
-	
+	@FindBy (id = "menu_core_viewDefinedPredefinedReports")
+	public WebElement headerReports;
 	
 	public DashboardPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);		
